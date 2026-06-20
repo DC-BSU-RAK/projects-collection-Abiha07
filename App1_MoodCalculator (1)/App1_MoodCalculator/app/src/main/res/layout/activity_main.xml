@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:padding="8dp">
+
+    <!-- Top bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:padding="4dp">
+
+        <Button
+            android:id="@+id/btnInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ℹ️ How to use"
+            android:textSize="13sp"
+            android:backgroundTint="@color/accent_purple"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Display area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:background="@color/display_bg"
+        android:padding="16dp"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/tvExpression"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#AAFFFFFF"
+            android:textSize="14sp"
+            android:gravity="end"
+            android:maxLines="4"
+            android:ellipsize="start" />
+
+        <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:maxLines="2"
+            android:ellipsize="start"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Mood grid (3 × 4 = 12 moods) -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:useDefaultMargins="true"
+        android:layout_marginTop="4dp">
+
+        <Button android:id="@+id/btn0"  style="@style/MoodButton" android:layout_row="0" android:layout_column="0"/>
+        <Button android:id="@+id/btn1"  style="@style/MoodButton" android:layout_row="0" android:layout_column="1"/>
+        <Button android:id="@+id/btn2"  style="@style/MoodButton" android:layout_row="0" android:layout_column="2"/>
+        <Button android:id="@+id/btn3"  style="@style/MoodButton" android:layout_row="1" android:layout_column="0"/>
+        <Button android:id="@+id/btn4"  style="@style/MoodButton" android:layout_row="1" android:layout_column="1"/>
+        <Button android:id="@+id/btn5"  style="@style/MoodButton" android:layout_row="1" android:layout_column="2"/>
+        <Button android:id="@+id/btn6"  style="@style/MoodButton" android:layout_row="2" android:layout_column="0"/>
+        <Button android:id="@+id/btn7"  style="@style/MoodButton" android:layout_row="2" android:layout_column="1"/>
+        <Button android:id="@+id/btn8"  style="@style/MoodButton" android:layout_row="2" android:layout_column="2"/>
+        <Button android:id="@+id/btn9"  style="@style/MoodButton" android:layout_row="3" android:layout_column="0"/>
+        <Button android:id="@+id/btn10" style="@style/MoodButton" android:layout_row="3" android:layout_column="1"/>
+        <Button android:id="@+id/btn11" style="@style/MoodButton" android:layout_row="3" android:layout_column="2"/>
+    </GridLayout>
+
+    <!-- Operator row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <Button
+            android:id="@+id/btnPlus"
+            style="@style/OpButton"
+            android:layout_weight="1"
+            android:backgroundTint="@color/op_color" />
+
+        <Button
+            android:id="@+id/btnMinus"
+            style="@style/OpButton"
+            android:layout_weight="1"
+            android:backgroundTint="@color/op_color" />
+
+        <Button
+            android:id="@+id/btnTimes"
+            style="@style/OpButton"
+            android:layout_weight="1"
+            android:backgroundTint="@color/op_color" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            style="@style/OpButton"
+            android:layout_weight="1"
+            android:backgroundTint="@color/op_color" />
+    </LinearLayout>
+
+    <!-- Clear & Equals -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CLEAR"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="@color/clear_color"
+            android:layout_marginEnd="2dp" />
+
+        <Button
+            android:id="@+id/btnEquals"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="= FEEL"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="@color/equals_color"
+            android:layout_marginStart="2dp" />
+    </LinearLayout>
+
+</LinearLayout>

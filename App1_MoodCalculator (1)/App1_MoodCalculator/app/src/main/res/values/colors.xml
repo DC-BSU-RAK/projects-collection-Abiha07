@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#1A1A2E</color>
+    <color name="display_bg">#16213E</color>
+    <color name="accent_purple">#7B2FBE</color>
+    <color name="op_color">#533483</color>
+    <color name="clear_color">#C0392B</color>
+    <color name="equals_color">#27AE60</color>
+    <color name="mood_btn_color">#0F3460</color>
+    <color name="modal_bg">#1A1A2E</color>
+    <color name="splash_bg">#7B2FBE</color>
+    <color name="colorPrimary">#7B2FBE</color>
+    <color name="colorPrimaryDark">#533483</color>
+    <color name="colorAccent">#E94560</color>
+</resources>
