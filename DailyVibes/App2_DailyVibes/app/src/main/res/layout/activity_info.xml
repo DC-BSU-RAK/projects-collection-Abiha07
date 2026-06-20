@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D0D1A"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✨"
+        android:textSize="70sp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Daily Vibes"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🌟 What is Daily Vibes?\nDaily Vibes gives you a personalised energy theme for your day — not just a quote, but a whole vibe with colour and mood.\n\n📱 3 Screens:\n• Home — Get your daily vibe card, refreshable any time\n• Vibes — Browse all vibes and tap to set a favourite ⭐\n• Settings — Save your name and preferences\n\n💾 Your Preferences:\nAll settings are saved locally on your device using Android's SharedPreferences, so your choices persist between sessions.\n\n✨ Tip:\nVisit the Vibes tab and star your favourite energy for the day!"
+        android:textColor="#CCCCCC"
+        android:textSize="15sp"
+        android:lineSpacingMultiplier="1.4"
+        android:background="#1A1A2E"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnCloseInfo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Let's Go! 🚀"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E94560"
+        android:padding="12dp"/>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0D1A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚙️ Settings"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Name -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Your Name" android:textColor="#AAAAAA" android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/etName"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:textColor="#FFFFFF" android:textColorHint="#666666"
+            android:background="#1A1A2E" android:padding="12dp"
+            android:layout_marginBottom="20dp" android:inputType="textPersonName"/>
+
+        <!-- Notifications Switch -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="🔔 Daily Notifications"
+                android:textColor="#FFFFFF" android:textSize="16sp"/>
+            <Switch android:id="@+id/switchNotify"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:checked="true"/>
+        </LinearLayout>
+
+        <!-- Dark Mode Switch -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="🌙 Dark Mode"
+                android:textColor="#FFFFFF" android:textSize="16sp"/>
+            <Switch android:id="@+id/switchDarkMode"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Favourite vibe display -->
+        <TextView android:id="@+id/tvFavoriteVibe"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Favourite Vibe: None set"
+            android:textColor="#FFD93D" android:textSize="16sp"
+            android:background="#1A1A2E" android:padding="12dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Save Button -->
+        <Button android:id="@+id/btnSaveSettings"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="💾 Save Preferences"
+            android:textSize="18sp" android:textColor="#FFFFFF"
+            android:backgroundTint="#E94560"/>
+
+    </LinearLayout>
+</ScrollView>

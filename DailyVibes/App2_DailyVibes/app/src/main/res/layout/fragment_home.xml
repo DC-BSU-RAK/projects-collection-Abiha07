@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0D1A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header row -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+            <TextView android:id="@+id/tvUserName"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hello, Friend! ✨"
+                android:textColor="#FFFFFF" android:textSize="22sp" android:textStyle="bold"/>
+            <Button android:id="@+id/btnHomeInfo"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="ℹ️" android:textSize="20sp"
+                android:background="@android:color/transparent" android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Vibe Card -->
+        <LinearLayout
+            android:id="@+id/vibeCard"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="#FFD93D"
+            android:padding="20dp">
+
+            <TextView android:id="@+id/tvVibeEmoji"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="🌞" android:textSize="70sp"/>
+
+            <TextView android:id="@+id/tvVibeTitle"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Sunny Vibes" android:textSize="24sp" android:textStyle="bold"
+                android:textColor="#000000" android:layout_marginTop="8dp"/>
+
+            <TextView android:id="@+id/tvVibeMsg"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Today is full of golden possibilities!"
+                android:textSize="15sp" android:textColor="#333333"
+                android:gravity="center" android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <Button android:id="@+id/btnNewVibe"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="✨ Get New Vibe"
+            android:textSize="18sp" android:textColor="#FFFFFF"
+            android:backgroundTint="#E94560" />
+
+    </LinearLayout>
+</ScrollView>
